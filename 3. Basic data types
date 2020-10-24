@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstdio>
+#include<bits/stdc++.h> 
+
+using namespace std;
+
+int main() {
+    int i;
+    long li;
+    char ch;
+    float fl;
+    double lfl;
+    scanf("%d %ld %c %f %lf",&i,&li,&ch,&fl,&lfl);
+    cout<<i<<endl;
+    cout<<li<<endl;
+    cout<<ch<<endl;
+    //cout<<fl<<endl;
+    cout << fixed << setprecision(4) <<fl<<endl; 
+    cout << fixed << setprecision(4) <<lfl<<endl; 
+
+    //cout<<lfl<<endl;
+    return 0;
+}
