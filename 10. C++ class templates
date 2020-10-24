@@ -1,0 +1,55 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <cassert>
+using namespace std;
+struct optimizer
+{
+    optimizer()
+    {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+    }
+};
+optimizer opt;
+/*Write the class AddElements here*/
+template <class T>
+
+class AddElements
+{
+    T a;
+    public:
+    AddElements(T& b)
+    {
+        a = b;
+    }
+    const T& add(T& n)
+    {
+        a+=n;
+        return a;}
+    
+    ~AddElements()
+    {}
+};
+template<>
+class AddElements<string>
+{
+    private:
+    string a;
+    public:
+    AddElements(string& b)
+    {
+        a=b;
+    }
+    const string& concatenate(string& n)
+    
+    {
+        a.append(n);
+        return a;
+    }
+    ~AddElements()
+    {}
+};
+int main () {
