@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <exception>
+using namespace std;
+string username;
+/* Define the exception here */
+class BadLengthException
+{
+    private:
+        int n;
+    public:
+    BadLengthException(int n)
+    {
+       this ->n=n;
+    }
+    BadLengthException()
+    {
+       
+    }
+    int what()
+    {
+       return n;
+    }
+};
